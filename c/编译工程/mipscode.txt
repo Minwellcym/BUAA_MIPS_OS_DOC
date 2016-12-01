@@ -1,0 +1,685 @@
+.data
+_string1:	.asciiz "test if statement!"
+_string2:	.asciiz "\n"
+_string3:	.asciiz "\n"
+_string4:	.asciiz "\n"
+_string5:	.asciiz "test loop statement!"
+_string6:	.asciiz "\n"
+_string7:	.asciiz "test forloop statement!"
+_string8:	.asciiz "\n"
+_string9:	.asciiz "test doloop statement!"
+_string10:	.asciiz "\n"
+_string11:	.asciiz "\n"
+_string12:	.asciiz "test scanf statement!"
+_string13:	.asciiz "\n"
+_string14:	.asciiz "test scanf char,input 3 char:"
+_string15:	.asciiz "\n"
+_string16:	.asciiz "\n"
+_string17:	.asciiz "\n"
+_string18:	.asciiz "test scanf int,input 3 int:"
+_string19:	.asciiz "\n"
+_string20:	.asciiz "\n"
+_string21:	.asciiz "test expression!"
+_string22:	.asciiz "\n"
+_string23:	.asciiz "\n"
+_string24:	.asciiz "\n"
+_string25:	.asciiz "\n"
+_string26:	.asciiz "\n"
+_string27:	.asciiz "test fac num,input n:"
+_string28:	.asciiz "the result of fac(n)="
+.text
+li $fp,256
+li $sp,256
+addi $sp,$sp,192
+addi $sp,$sp,4
+sw $fp,0($sp)
+addi $sp,$sp,4
+sw $fp,0($sp)
+addi $sp,$sp,4
+addi $sp,$sp,4
+addi $fp,$sp,0
+addi $sp,$sp,12
+j _main
+ testif:
+sw $ra,-4($fp)
+# printf
+la  $a0,_string1
+li  $v0,4
+syscall
+# printf
+la  $a0,_string2
+li  $v0,4
+syscall
+# branch
+li $t0,10
+lw $t1,0($fp)
+ble $t0,$t1,Label_2
+# calc
+li $t0,10
+lw $t1,0($fp)
+sub $s0,$t0, $t1
+sw $s0,8($fp)
+# printf
+lw $t0,8($fp)
+add  $a0,$t0, $0
+li  $v0,1
+syscall
+# printf
+la  $a0,_string3
+li  $v0,4
+syscall
+# Jump
+j Label_3
+ Label_2:
+# calc
+lw $t0,0($fp)
+li $t1,10
+sub $s0,$t0, $t1
+sw $s0,12($fp)
+# printf
+lw $t0,12($fp)
+add  $a0,$t0, $0
+li  $v0,1
+syscall
+# printf
+la  $a0,_string4
+li  $v0,4
+syscall
+ Label_3:
+# return
+lw $ra,-4($fp)
+lw $v0,-16($fp)
+lw $t0,-12($fp)
+addi $sp,$fp,-16
+move $fp,$t0
+jr $ra
+ testloop:
+sw $ra,-4($fp)
+# printf
+la  $a0,_string5
+li  $v0,4
+syscall
+# printf
+la  $a0,_string6
+li  $v0,4
+syscall
+# printf
+la  $a0,_string7
+li  $v0,4
+syscall
+# printf
+la  $a0,_string8
+li  $v0,4
+syscall
+# assign
+li $t0,0
+sw $t0,0($fp)
+ Label_5:
+# branch
+lw $t0,0($fp)
+li $t1,10
+bge $t0,$t1,Label_6
+# arrayaddr
+lw $t2,-8($fp)
+la $t1,24($t2)
+lw $t2,0($fp)
+mul $t2,$t2,4
+add $t1,$t1,$t2
+sw $t1,4($fp)
+# calc
+lw $t0,0($fp)
+li $t1,1
+add $s0,$t0, $t1
+sw $s0,8($fp)
+# assign
+lw $t0,8($fp)
+lw $t1,4($fp)
+sw $t0,0($t1)
+# calc
+lw $t0,0($fp)
+li $t1,1
+add $s0,$t0, $t1
+sw $s0,0($fp)
+# Jump
+j Label_5
+ Label_6:
+# assign
+li $t0,0
+sw $t0,0($fp)
+ Label_7:
+# branch
+lw $t0,0($fp)
+li $t1,10
+bge $t0,$t1,Label_8
+# arrayaddr
+lw $t2,-8($fp)
+la $t1,24($t2)
+lw $t2,0($fp)
+mul $t2,$t2,4
+add $t1,$t1,$t2
+lw $t1,0($t1)
+sw $t1,12($fp)
+# printf
+lw $t0,12($fp)
+add  $a0,$t0, $0
+li  $v0,1
+syscall
+# calc
+lw $t0,0($fp)
+li $t1,1
+add $s0,$t0, $t1
+sw $s0,0($fp)
+# Jump
+j Label_7
+ Label_8:
+# printf
+la  $a0,_string9
+li  $v0,4
+syscall
+# printf
+la  $a0,_string10
+li  $v0,4
+syscall
+# assign
+li $t0,0
+sw $t0,0($fp)
+ Label_9:
+# arrayaddr
+lw $t2,-8($fp)
+la $t1,64($t2)
+lw $t2,0($fp)
+mul $t2,$t2,4
+add $t1,$t1,$t2
+sw $t1,16($fp)
+# calc
+lw $t0,0($fp)
+li $t1,1
+add $s0,$t0, $t1
+sw $s0,20($fp)
+# assign
+lw $t0,20($fp)
+lw $t1,16($fp)
+sw $t0,0($t1)
+# calc
+lw $t0,0($fp)
+li $t1,1
+add $s0,$t0, $t1
+sw $s0,24($fp)
+# assign
+lw $t0,24($fp)
+sw $t0,0($fp)
+# branch
+lw $t0,0($fp)
+li $t1,10
+blt $t0,$t1,Label_9
+# assign
+li $t0,0
+sw $t0,0($fp)
+ Label_10:
+# arrayaddr
+lw $t2,-8($fp)
+la $t1,64($t2)
+lw $t2,0($fp)
+mul $t2,$t2,4
+add $t1,$t1,$t2
+lw $t1,0($t1)
+sw $t1,28($fp)
+# printf
+lw $t0,28($fp)
+add  $a0,$t0, $0
+li  $v0,1
+syscall
+# calc
+lw $t0,0($fp)
+li $t1,1
+add $s0,$t0, $t1
+sw $s0,32($fp)
+# assign
+lw $t0,32($fp)
+sw $t0,0($fp)
+# branch
+lw $t0,0($fp)
+li $t1,10
+blt $t0,$t1,Label_10
+# printf
+la  $a0,_string11
+li  $v0,4
+syscall
+# return
+lw $ra,-4($fp)
+lw $v0,-16($fp)
+lw $t0,-12($fp)
+addi $sp,$fp,-16
+move $fp,$t0
+jr $ra
+ testscanf:
+sw $ra,-4($fp)
+# printf
+la  $a0,_string12
+li  $v0,4
+syscall
+# printf
+la  $a0,_string13
+li  $v0,4
+syscall
+# printf
+la  $a0,_string14
+li  $v0,4
+syscall
+# printf
+la  $a0,_string15
+li  $v0,4
+syscall
+# scanf
+li $v0,12
+syscall
+sw $v0,4($fp)
+# scanf
+li $v0,12
+syscall
+sw $v0,8($fp)
+# scanf
+li $v0,12
+syscall
+sw $v0,12($fp)
+# printf
+la  $a0,_string16
+li  $v0,4
+syscall
+# printf
+lw $t0,4($fp)
+add $a0,$t0,$0
+li $v0,11
+syscall
+# printf
+lw $t0,8($fp)
+add $a0,$t0,$0
+li $v0,11
+syscall
+# printf
+lw $t0,12($fp)
+add $a0,$t0,$0
+li $v0,11
+syscall
+# printf
+la  $a0,_string17
+li  $v0,4
+syscall
+# printf
+la  $a0,_string18
+li  $v0,4
+syscall
+# printf
+la  $a0,_string19
+li  $v0,4
+syscall
+# scanf
+li $v0,5
+syscall
+sw $v0,16($fp)
+# scanf
+li $v0,5
+syscall
+sw $v0,20($fp)
+# scanf
+li $v0,5
+syscall
+sw $v0,24($fp)
+# printf
+lw $t0,16($fp)
+add  $a0,$t0, $0
+li  $v0,1
+syscall
+# printf
+lw $t0,20($fp)
+add  $a0,$t0, $0
+li  $v0,1
+syscall
+# printf
+lw $t0,24($fp)
+add  $a0,$t0, $0
+li  $v0,1
+syscall
+# printf
+la  $a0,_string20
+li  $v0,4
+syscall
+# return
+lw $ra,-4($fp)
+lw $v0,-16($fp)
+lw $t0,-12($fp)
+addi $sp,$fp,-16
+move $fp,$t0
+jr $ra
+ testexpr:
+sw $ra,-4($fp)
+# assign
+li $t0,1
+sw $t0,0($fp)
+# assign
+li $t0,2
+sw $t0,4($fp)
+# assign
+li $t0,3
+sw $t0,8($fp)
+# assign
+sw $t0,12($fp)
+# assign
+sw $t0,16($fp)
+# assign
+sw $t0,20($fp)
+# printf
+la  $a0,_string21
+li  $v0,4
+syscall
+# printf
+la  $a0,_string22
+li  $v0,4
+syscall
+# neg
+lw $t0,0($fp)
+sub  $s0,$0,$t0
+sw $s0,24($fp)
+# arrayaddr
+lw $t2,-8($fp)
+la $t1,24($t2)
+li $t2,1
+mul $t2,$t2,4
+add $t1,$t1,$t2
+lw $t1,0($t1)
+sw $t1,28($fp)
+# calc
+lw $t0,4($fp)
+lw $t1,28($fp)
+mul $s0,$t0, $t1
+sw $s0,32($fp)
+# calc
+lw $t0,24($fp)
+lw $t1,32($fp)
+add $s0,$t0, $t1
+sw $s0,36($fp)
+# arrayaddr
+lw $t2,-8($fp)
+la $t1,24($t2)
+li $t2,2
+mul $t2,$t2,4
+add $t1,$t1,$t2
+lw $t1,0($t1)
+sw $t1,40($fp)
+# calc
+lw $t0,8($fp)
+lw $t1,40($fp)
+div $t0, $t1
+mflo $s0
+sw $s0,44($fp)
+# calc
+lw $t0,36($fp)
+lw $t1,44($fp)
+sub $s0,$t0, $t1
+sw $s0,48($fp)
+# printf
+lw $t0,48($fp)
+add  $a0,$t0, $0
+li  $v0,1
+syscall
+# printf
+la  $a0,_string23
+li  $v0,4
+syscall
+# arrayaddr
+lw $t2,-8($fp)
+la $t1,24($t2)
+li $t2,1
+mul $t2,$t2,4
+add $t1,$t1,$t2
+lw $t1,0($t1)
+sw $t1,52($fp)
+# calc
+lw $t0,4($fp)
+lw $t1,52($fp)
+div $t0, $t1
+mflo $s0
+sw $s0,56($fp)
+# calc
+lw $t0,8($fp)
+lw $t1,56($fp)
+sub $s0,$t0, $t1
+sw $s0,60($fp)
+# calc
+lw $t0,0($fp)
+lw $t1,60($fp)
+mul $s0,$t0, $t1
+sw $s0,64($fp)
+# calc
+lw $t0,4($fp)
+lw $t1,64($fp)
+add $s0,$t0, $t1
+sw $s0,68($fp)
+# printf
+lw $t0,68($fp)
+add  $a0,$t0, $0
+li  $v0,1
+syscall
+# printf
+la  $a0,_string24
+li  $v0,4
+syscall
+# printf
+lw $t0,20($fp)
+add $a0,$t0,$0
+li $v0,11
+syscall
+# printf
+la  $a0,_string25
+li  $v0,4
+syscall
+# push
+lw $t0,4($fp)
+sw $t0,16($sp)
+# call
+addi $sp,$sp,4
+sw $fp,0($sp)
+addi $sp,$sp,4
+lw $t0,-8($fp)
+sw $t0,0($sp)
+addi $sp,$sp,4
+addi $sp,$sp,4
+addi $fp,$sp,0
+addi $sp,$sp,16
+addi $sp,$sp,4
+jal testif
+# printf
+# printf
+la  $a0,_string26
+li  $v0,4
+syscall
+# return
+lw $ra,-4($fp)
+lw $v0,-16($fp)
+lw $t0,-12($fp)
+addi $sp,$fp,-16
+move $fp,$t0
+jr $ra
+ testfac:
+sw $ra,-4($fp)
+# branch
+lw $t0,0($fp)
+li $t1,1
+bne $t0,$t1,Label_14
+# return
+lw $ra,-4($fp)
+li $t1,1
+move $v0,$t1
+lw $t0,-12($fp)
+addi $sp,$fp,-16
+move $fp,$t0
+jr $ra
+# Jump
+j Label_15
+ Label_14:
+# branch
+lw $t0,0($fp)
+li $t1,2
+bne $t0,$t1,Label_16
+# return
+lw $ra,-4($fp)
+li $t1,1
+move $v0,$t1
+lw $t0,-12($fp)
+addi $sp,$fp,-16
+move $fp,$t0
+jr $ra
+# Jump
+j Label_17
+ Label_16:
+# branch
+lw $t0,0($fp)
+li $t1,3
+blt $t0,$t1,Label_18
+# calc
+lw $t0,0($fp)
+li $t1,1
+sub $s0,$t0, $t1
+sw $s0,4($fp)
+# push
+lw $t0,4($fp)
+sw $t0,16($sp)
+# call
+addi $sp,$sp,4
+sw $fp,0($sp)
+addi $sp,$sp,4
+lw $t0,-8($fp)
+sw $t0,0($sp)
+addi $sp,$sp,4
+addi $sp,$sp,4
+addi $fp,$sp,0
+addi $sp,$sp,24
+addi $sp,$sp,4
+jal testfac
+sw $v0,8($fp)
+# calc
+lw $t0,0($fp)
+li $t1,2
+sub $s0,$t0, $t1
+sw $s0,12($fp)
+# push
+lw $t0,12($fp)
+sw $t0,16($sp)
+# call
+addi $sp,$sp,4
+sw $fp,0($sp)
+addi $sp,$sp,4
+lw $t0,-8($fp)
+sw $t0,0($sp)
+addi $sp,$sp,4
+addi $sp,$sp,4
+addi $fp,$sp,0
+addi $sp,$sp,24
+addi $sp,$sp,4
+jal testfac
+sw $v0,16($fp)
+# calc
+lw $t0,8($fp)
+lw $t1,16($fp)
+add $s0,$t0, $t1
+sw $s0,20($fp)
+# return
+lw $ra,-4($fp)
+lw $t1,20($fp)
+move $v0,$t1
+lw $t0,-12($fp)
+addi $sp,$fp,-16
+move $fp,$t0
+jr $ra
+ Label_18:
+ Label_17:
+ Label_15:
+ _main:
+# scanf
+li $v0,5
+syscall
+sw $v0,0($fp)
+# push
+lw $t0,0($fp)
+sw $t0,16($sp)
+# call
+addi $sp,$sp,4
+sw $fp,0($sp)
+addi $sp,$sp,4
+lw $t0,-8($fp)
+sw $t0,0($sp)
+addi $sp,$sp,4
+addi $sp,$sp,4
+addi $fp,$sp,0
+addi $sp,$sp,16
+addi $sp,$sp,4
+jal testif
+# call
+addi $sp,$sp,4
+sw $fp,0($sp)
+addi $sp,$sp,4
+lw $t0,-8($fp)
+sw $t0,0($sp)
+addi $sp,$sp,4
+addi $sp,$sp,4
+addi $fp,$sp,0
+addi $sp,$sp,36
+addi $sp,$sp,4
+jal testloop
+# call
+addi $sp,$sp,4
+sw $fp,0($sp)
+addi $sp,$sp,4
+lw $t0,-8($fp)
+sw $t0,0($sp)
+addi $sp,$sp,4
+addi $sp,$sp,4
+addi $fp,$sp,0
+addi $sp,$sp,28
+addi $sp,$sp,4
+jal testscanf
+# call
+addi $sp,$sp,4
+sw $fp,0($sp)
+addi $sp,$sp,4
+lw $t0,-8($fp)
+sw $t0,0($sp)
+addi $sp,$sp,4
+addi $sp,$sp,4
+addi $fp,$sp,0
+addi $sp,$sp,76
+addi $sp,$sp,4
+jal testexpr
+# printf
+la  $a0,_string27
+li  $v0,4
+syscall
+# scanf
+li $v0,5
+syscall
+sw $v0,4($fp)
+# printf
+la  $a0,_string28
+li  $v0,4
+syscall
+# push
+lw $t0,4($fp)
+sw $t0,16($sp)
+# call
+addi $sp,$sp,4
+sw $fp,0($sp)
+addi $sp,$sp,4
+lw $t0,-8($fp)
+sw $t0,0($sp)
+addi $sp,$sp,4
+addi $sp,$sp,4
+addi $fp,$sp,0
+addi $sp,$sp,24
+addi $sp,$sp,4
+jal testfac
+sw $v0,8($fp)
+# printf
+lw $t0,8($fp)
+add  $a0,$t0, $0
+li  $v0,1
+syscall

@@ -1,0 +1,1251 @@
+const constsym
+int intsym
+ci1 ident
+= becomes
+10 unsgnumber
+, comma
+ci2 ident
+= becomes
+5 unsgnumber
+; semicolon
+const constsym
+char charsym
+cc1 ident
+= becomes
+a chcon
+, comma
+cc2 ident
+= becomes
+b chcon
+; semicolon
+int intsym
+i1 ident
+, comma
+i2 ident
+, comma
+iarr1 ident
+[ lbrack
+10 unsgnumber
+] rbrack
+, comma
+iarr2 ident
+[ lbrack
+10 unsgnumber
+] rbrack
+; semicolon
+char charsym
+c1 ident
+, comma
+c2 ident
+, comma
+carr1 ident
+[ lbrack
+10 unsgnumber
+] rbrack
+, comma
+carr2 ident
+[ lbrack
+10 unsgnumber
+] rbrack
+; semicolon
+void voidsym
+testif ident
+( lparent
+int intsym
+a ident
+) rparent
+{ lbrace
+const constsym
+int intsym
+a1 ident
+= becomes
+10 unsgnumber
+; semicolon
+printf printfsym
+( lparent
+test if statement! strcon
+) rparent
+; semicolon
+printf printfsym
+This is a printf Statement
+( lparent
+\n strcon
+) rparent
+; semicolon
+if ifsym
+This is a printf Statement
+( lparent
+a1 ident
+½øÈë±í´ïÊ½´¦Àí
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
+> gtr
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+Àë¿ª±í´ïÊ½´¦Àí
+a ident
+½øÈë±í´ïÊ½´¦Àí
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
+) rparent
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+Àë¿ª±í´ïÊ½´¦Àí
+{ lbrace
+printf printfsym
+( lparent
+a1 ident
+½øÈë±í´ïÊ½´¦Àí
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
+- minus
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+a ident
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
+) rparent
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+Àë¿ª±í´ïÊ½´¦Àí
+; semicolon
+printf printfsym
+This is a printf Statement
+( lparent
+\n strcon
+) rparent
+; semicolon
+} rbrace
+This is a printf Statement
+else elsesym
+{ lbrace
+printf printfsym
+( lparent
+a ident
+½øÈë±í´ïÊ½´¦Àí
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
+- minus
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+a1 ident
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
+) rparent
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+Àë¿ª±í´ïÊ½´¦Àí
+; semicolon
+printf printfsym
+This is a printf Statement
+( lparent
+\n strcon
+) rparent
+; semicolon
+} rbrace
+This is a printf Statement
+return returnsym
+; semicolon
+} rbrace
+void voidsym
+testloop ident
+( lparent
+) rparent
+{ lbrace
+int intsym
+i ident
+; semicolon
+printf printfsym
+( lparent
+test loop statement! strcon
+) rparent
+; semicolon
+printf printfsym
+This is a printf Statement
+( lparent
+\n strcon
+) rparent
+; semicolon
+printf printfsym
+This is a printf Statement
+( lparent
+test forloop statement! strcon
+) rparent
+; semicolon
+printf printfsym
+This is a printf Statement
+( lparent
+\n strcon
+) rparent
+; semicolon
+for forsym
+This is a printf Statement
+( lparent
+i ident
+= becomes
+0 unsgnumber
+½øÈë±í´ïÊ½´¦Àí
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
+; semicolon
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+Àë¿ª±í´ïÊ½´¦Àí
+i ident
+½øÈë±í´ïÊ½´¦Àí
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
+< lss
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+Àë¿ª±í´ïÊ½´¦Àí
+ci1 ident
+½øÈë±í´ïÊ½´¦Àí
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
+; semicolon
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+Àë¿ª±í´ïÊ½´¦Àí
+i ident
+= becomes
+i ident
++ plus
+1 unsgnumber
+) rparent
+{ lbrace
+iarr1 ident
+[ lbrack
+i ident
+½øÈë±í´ïÊ½´¦Àí
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
+] rbrack
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+Àë¿ª±í´ïÊ½´¦Àí
+= becomes
+i ident
+½øÈë±í´ïÊ½´¦Àí
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
++ plus
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+1 unsgnumber
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
+; semicolon
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+Àë¿ª±í´ïÊ½´¦Àí
+} rbrace
+This is a assignStatement Statement
+for forsym
+( lparent
+i ident
+= becomes
+0 unsgnumber
+½øÈë±í´ïÊ½´¦Àí
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
+; semicolon
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+Àë¿ª±í´ïÊ½´¦Àí
+i ident
+½øÈë±í´ïÊ½´¦Àí
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
+< lss
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+Àë¿ª±í´ïÊ½´¦Àí
+ci1 ident
+½øÈë±í´ïÊ½´¦Àí
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
+; semicolon
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+Àë¿ª±í´ïÊ½´¦Àí
+i ident
+= becomes
+i ident
++ plus
+1 unsgnumber
+) rparent
+{ lbrace
+printf printfsym
+( lparent
+iarr1 ident
+½øÈë±í´ïÊ½´¦Àí
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
+[ lbrack
+i ident
+½øÈë±í´ïÊ½´¦Àí
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
+] rbrack
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+Àë¿ª±í´ïÊ½´¦Àí
+) rparent
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+Àë¿ª±í´ïÊ½´¦Àí
+; semicolon
+} rbrace
+This is a printf Statement
+printf printfsym
+( lparent
+test doloop statement! strcon
+) rparent
+; semicolon
+printf printfsym
+This is a printf Statement
+( lparent
+\n strcon
+) rparent
+; semicolon
+i ident
+This is a printf Statement
+= becomes
+0 unsgnumber
+½øÈë±í´ïÊ½´¦Àí
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
+; semicolon
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+Àë¿ª±í´ïÊ½´¦Àí
+do dosym
+This is a assignStatement Statement
+{ lbrace
+iarr2 ident
+[ lbrack
+i ident
+½øÈë±í´ïÊ½´¦Àí
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
+] rbrack
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+Àë¿ª±í´ïÊ½´¦Àí
+= becomes
+i ident
+½øÈë±í´ïÊ½´¦Àí
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
++ plus
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+1 unsgnumber
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
+; semicolon
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+Àë¿ª±í´ïÊ½´¦Àí
+i ident
+This is a assignStatement Statement
+= becomes
+i ident
+½øÈë±í´ïÊ½´¦Àí
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
++ plus
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+1 unsgnumber
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
+; semicolon
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+Àë¿ª±í´ïÊ½´¦Àí
+} rbrace
+This is a assignStatement Statement
+while whilesym
+( lparent
+i ident
+½øÈë±í´ïÊ½´¦Àí
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
+< lss
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+Àë¿ª±í´ïÊ½´¦Àí
+ci1 ident
+½øÈë±í´ïÊ½´¦Àí
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
+) rparent
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+Àë¿ª±í´ïÊ½´¦Àí
+i ident
+= becomes
+0 unsgnumber
+½øÈë±í´ïÊ½´¦Àí
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
+; semicolon
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+Àë¿ª±í´ïÊ½´¦Àí
+do dosym
+This is a assignStatement Statement
+{ lbrace
+printf printfsym
+( lparent
+iarr2 ident
+½øÈë±í´ïÊ½´¦Àí
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
+[ lbrack
+i ident
+½øÈë±í´ïÊ½´¦Àí
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
+] rbrack
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+Àë¿ª±í´ïÊ½´¦Àí
+) rparent
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+Àë¿ª±í´ïÊ½´¦Àí
+; semicolon
+i ident
+This is a printf Statement
+= becomes
+i ident
+½øÈë±í´ïÊ½´¦Àí
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
++ plus
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+1 unsgnumber
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
+; semicolon
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+Àë¿ª±í´ïÊ½´¦Àí
+} rbrace
+This is a assignStatement Statement
+while whilesym
+( lparent
+i ident
+½øÈë±í´ïÊ½´¦Àí
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
+< lss
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+Àë¿ª±í´ïÊ½´¦Àí
+ci1 ident
+½øÈë±í´ïÊ½´¦Àí
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
+) rparent
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+Àë¿ª±í´ïÊ½´¦Àí
+printf printfsym
+( lparent
+\n strcon
+) rparent
+; semicolon
+return returnsym
+This is a printf Statement
+; semicolon
+} rbrace
+void voidsym
+testscanf ident
+( lparent
+) rparent
+{ lbrace
+int intsym
+i ident
+; semicolon
+char charsym
+ch1 ident
+, comma
+ch2 ident
+, comma
+ch3 ident
+; semicolon
+int intsym
+i1 ident
+, comma
+i2 ident
+, comma
+i3 ident
+; semicolon
+printf printfsym
+( lparent
+test scanf statement! strcon
+) rparent
+; semicolon
+printf printfsym
+This is a printf Statement
+( lparent
+\n strcon
+) rparent
+; semicolon
+printf printfsym
+This is a printf Statement
+( lparent
+test scanf char,input 3 char: strcon
+) rparent
+; semicolon
+printf printfsym
+This is a printf Statement
+( lparent
+\n strcon
+) rparent
+; semicolon
+scanf scanfsym
+This is a printf Statement
+( lparent
+ch1 ident
+, comma
+ch2 ident
+, comma
+ch3 ident
+) rparent
+; semicolon
+printf printfsym
+This is a scanf Statement
+( lparent
+\n strcon
+) rparent
+; semicolon
+printf printfsym
+This is a printf Statement
+( lparent
+ch1 ident
+½øÈë±í´ïÊ½´¦Àí
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
+) rparent
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+Àë¿ª±í´ïÊ½´¦Àí
+; semicolon
+printf printfsym
+This is a printf Statement
+( lparent
+ch2 ident
+½øÈë±í´ïÊ½´¦Àí
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
+) rparent
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+Àë¿ª±í´ïÊ½´¦Àí
+; semicolon
+printf printfsym
+This is a printf Statement
+( lparent
+ch3 ident
+½øÈë±í´ïÊ½´¦Àí
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
+) rparent
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+Àë¿ª±í´ïÊ½´¦Àí
+; semicolon
+printf printfsym
+This is a printf Statement
+( lparent
+\n strcon
+) rparent
+; semicolon
+printf printfsym
+This is a printf Statement
+( lparent
+test scanf int,input 3 int: strcon
+) rparent
+; semicolon
+printf printfsym
+This is a printf Statement
+( lparent
+\n strcon
+) rparent
+; semicolon
+scanf scanfsym
+This is a printf Statement
+( lparent
+i1 ident
+, comma
+i2 ident
+, comma
+i3 ident
+) rparent
+; semicolon
+printf printfsym
+This is a scanf Statement
+( lparent
+i1 ident
+½øÈë±í´ïÊ½´¦Àí
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
+) rparent
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+Àë¿ª±í´ïÊ½´¦Àí
+; semicolon
+printf printfsym
+This is a printf Statement
+( lparent
+i2 ident
+½øÈë±í´ïÊ½´¦Àí
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
+) rparent
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+Àë¿ª±í´ïÊ½´¦Àí
+; semicolon
+printf printfsym
+This is a printf Statement
+( lparent
+i3 ident
+½øÈë±í´ïÊ½´¦Àí
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
+) rparent
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+Àë¿ª±í´ïÊ½´¦Àí
+; semicolon
+printf printfsym
+This is a printf Statement
+( lparent
+\n strcon
+) rparent
+; semicolon
+return returnsym
+This is a printf Statement
+; semicolon
+} rbrace
+void voidsym
+testexpr ident
+( lparent
+) rparent
+{ lbrace
+int intsym
+i1 ident
+, comma
+i2 ident
+, comma
+i3 ident
+; semicolon
+char charsym
+c1 ident
+, comma
+c2 ident
+, comma
+c3 ident
+; semicolon
+i1 ident
+= becomes
+1 unsgnumber
+½øÈë±í´ïÊ½´¦Àí
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
+; semicolon
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+Àë¿ª±í´ïÊ½´¦Àí
+i2 ident
+This is a assignStatement Statement
+= becomes
+2 unsgnumber
+½øÈë±í´ïÊ½´¦Àí
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
+; semicolon
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+Àë¿ª±í´ïÊ½´¦Àí
+i3 ident
+This is a assignStatement Statement
+= becomes
+3 unsgnumber
+½øÈë±í´ïÊ½´¦Àí
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
+; semicolon
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+Àë¿ª±í´ïÊ½´¦Àí
+c1 ident
+This is a assignStatement Statement
+= becomes
+a chcon
+½øÈë±í´ïÊ½´¦Àí
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
+; semicolon
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+Àë¿ª±í´ïÊ½´¦Àí
+c2 ident
+This is a assignStatement Statement
+= becomes
+b chcon
+½øÈë±í´ïÊ½´¦Àí
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
+; semicolon
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+Àë¿ª±í´ïÊ½´¦Àí
+c3 ident
+This is a assignStatement Statement
+= becomes
+c chcon
+½øÈë±í´ïÊ½´¦Àí
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
+; semicolon
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+Àë¿ª±í´ïÊ½´¦Àí
+printf printfsym
+This is a assignStatement Statement
+( lparent
+test expression! strcon
+) rparent
+; semicolon
+printf printfsym
+This is a printf Statement
+( lparent
+\n strcon
+) rparent
+; semicolon
+printf printfsym
+This is a printf Statement
+( lparent
+- minus
+½øÈë±í´ïÊ½´¦Àí
+i1 ident
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
++ plus
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+i2 ident
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
+* times
+Àë¿ªÒò×Ó´¦Àí
+iarr1 ident
+½øÈëÒò×Ó´¦Àí
+[ lbrack
+1 unsgnumber
+½øÈë±í´ïÊ½´¦Àí
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
+] rbrack
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+Àë¿ª±í´ïÊ½´¦Àí
+- minus
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+i3 ident
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
+/ divid
+Àë¿ªÒò×Ó´¦Àí
+iarr1 ident
+½øÈëÒò×Ó´¦Àí
+[ lbrack
+2 unsgnumber
+½øÈë±í´ïÊ½´¦Àí
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
+] rbrack
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+Àë¿ª±í´ïÊ½´¦Àí
+) rparent
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+Àë¿ª±í´ïÊ½´¦Àí
+; semicolon
+printf printfsym
+This is a printf Statement
+( lparent
+\n strcon
+) rparent
+; semicolon
+printf printfsym
+This is a printf Statement
+( lparent
++ plus
+½øÈë±í´ïÊ½´¦Àí
+i2 ident
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
++ plus
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+i1 ident
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
+* times
+Àë¿ªÒò×Ó´¦Àí
+( lparent
+½øÈëÒò×Ó´¦Àí
+i3 ident
+½øÈë±í´ïÊ½´¦Àí
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
+- minus
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+i2 ident
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
+/ divid
+Àë¿ªÒò×Ó´¦Àí
+iarr1 ident
+½øÈëÒò×Ó´¦Àí
+[ lbrack
+1 unsgnumber
+½øÈë±í´ïÊ½´¦Àí
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
+] rbrack
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+Àë¿ª±í´ïÊ½´¦Àí
+) rparent
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+Àë¿ª±í´ïÊ½´¦Àí
+) rparent
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+Àë¿ª±í´ïÊ½´¦Àí
+; semicolon
+printf printfsym
+This is a printf Statement
+( lparent
+\n strcon
+) rparent
+; semicolon
+printf printfsym
+This is a printf Statement
+( lparent
+c3 ident
+½øÈë±í´ïÊ½´¦Àí
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
+) rparent
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+Àë¿ª±í´ïÊ½´¦Àí
+; semicolon
+printf printfsym
+This is a printf Statement
+( lparent
+\n strcon
+) rparent
+; semicolon
+printf printfsym
+This is a printf Statement
+( lparent
+testif ident
+½øÈë±í´ïÊ½´¦Àí
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
+( lparent
+i2 ident
+½øÈë±í´ïÊ½´¦Àí
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
+) rparent
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+Àë¿ª±í´ïÊ½´¦Àí
+) rparent
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+Àë¿ª±í´ïÊ½´¦Àí
+; semicolon
+printf printfsym
+This is a printf Statement
+( lparent
+\n strcon
+) rparent
+; semicolon
+return returnsym
+This is a printf Statement
+; semicolon
+} rbrace
+int intsym
+testfac ident
+( lparent
+int intsym
+n ident
+) rparent
+{ lbrace
+if ifsym
+( lparent
+n ident
+½øÈë±í´ïÊ½´¦Àí
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
+== eql
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+Àë¿ª±í´ïÊ½´¦Àí
+1 unsgnumber
+½øÈë±í´ïÊ½´¦Àí
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
+) rparent
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+Àë¿ª±í´ïÊ½´¦Àí
+return returnsym
+( lparent
+1 unsgnumber
+½øÈë±í´ïÊ½´¦Àí
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
+) rparent
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+Àë¿ª±í´ïÊ½´¦Àí
+; semicolon
+else elsesym
+if ifsym
+( lparent
+n ident
+½øÈë±í´ïÊ½´¦Àí
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
+== eql
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+Àë¿ª±í´ïÊ½´¦Àí
+2 unsgnumber
+½øÈë±í´ïÊ½´¦Àí
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
+) rparent
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+Àë¿ª±í´ïÊ½´¦Àí
+return returnsym
+( lparent
+1 unsgnumber
+½øÈë±í´ïÊ½´¦Àí
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
+) rparent
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+Àë¿ª±í´ïÊ½´¦Àí
+; semicolon
+else elsesym
+if ifsym
+( lparent
+n ident
+½øÈë±í´ïÊ½´¦Àí
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
+>= geq
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+Àë¿ª±í´ïÊ½´¦Àí
+3 unsgnumber
+½øÈë±í´ïÊ½´¦Àí
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
+) rparent
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+Àë¿ª±í´ïÊ½´¦Àí
+return returnsym
+( lparent
+testfac ident
+½øÈë±í´ïÊ½´¦Àí
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
+( lparent
+n ident
+½øÈë±í´ïÊ½´¦Àí
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
+- minus
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+1 unsgnumber
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
+) rparent
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+Àë¿ª±í´ïÊ½´¦Àí
++ plus
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+testfac ident
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
+( lparent
+n ident
+½øÈë±í´ïÊ½´¦Àí
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
+- minus
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+2 unsgnumber
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
+) rparent
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+Àë¿ª±í´ïÊ½´¦Àí
+) rparent
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+Àë¿ª±í´ïÊ½´¦Àí
+; semicolon
+} rbrace
+void voidsym
+main mainsym
+( lparent
+) rparent
+{ lbrace
+int intsym
+n1 ident
+, comma
+n2 ident
+; semicolon
+scanf scanfsym
+( lparent
+n1 ident
+) rparent
+; semicolon
+testif ident
+This is a scanf Statement
+( lparent
+n1 ident
+½øÈë±í´ïÊ½´¦Àí
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
+) rparent
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+Àë¿ª±í´ïÊ½´¦Àí
+; semicolon
+testloop ident
+( lparent
+) rparent
+; semicolon
+testscanf ident
+( lparent
+) rparent
+; semicolon
+testexpr ident
+( lparent
+) rparent
+; semicolon
+printf printfsym
+( lparent
+test fac num,input n: strcon
+) rparent
+; semicolon
+scanf scanfsym
+This is a printf Statement
+( lparent
+n2 ident
+) rparent
+; semicolon
+printf printfsym
+This is a scanf Statement
+( lparent
+the result of fac(n)= strcon
+, comma
+testfac ident
+½øÈë±í´ïÊ½´¦Àí
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
+( lparent
+n2 ident
+½øÈë±í´ïÊ½´¦Àí
+½øÈëÏî´¦Àí
+½øÈëÒò×Ó´¦Àí
+) rparent
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+Àë¿ª±í´ïÊ½´¦Àí
+) rparent
+Àë¿ªÒò×Ó´¦Àí
+Àë¿ªÏî´¦Àí
+Àë¿ª±í´ïÊ½´¦Àí
+; semicolon
+} rbrace
+This is a printf Statement
+ÿ rbrace
+149
+   testif:
+     SAVE 
+      PRF   test if statement!
+      PRF                   \n
+      BLE  [LABEL_2]        10         a
+      SUB    [temp1]        10         a
+      PRF    [temp1]
+      PRF                   \n
+      JMP  [LABEL_3]
+[LABEL_2]:
+      SUB    [temp2]         a        10
+      PRF    [temp2]
+      PRF                   \n
+[LABEL_3]:
+      RET 
+ testloop:
+     SAVE 
+      PRF test loop statement!
+      PRF                   \n
+      PRF test forloop statement!
+      PRF                   \n
+      ASS          i         0
+[LABEL_5]:
+      BGE  [LABEL_6]         i        10
+      OFF    [temp3]     iarr1         i
+      ADD    [temp4]         i         1
+      ASS    [temp3]   [temp4]
+      ADD          i         i         1
+      JMP  [LABEL_5]
+[LABEL_6]:
+      ASS          i         0
+[LABEL_7]:
+      BGE  [LABEL_8]         i        10
+      SEL    [temp5]     iarr1         i
+      PRF    [temp5]
+      ADD          i         i         1
+      JMP  [LABEL_7]
+[LABEL_8]:
+      PRF test doloop statement!
+      PRF                   \n
+      ASS          i         0
+[LABEL_9]:
+      OFF    [temp6]     iarr2         i
+      ADD    [temp7]         i         1
+      ASS    [temp6]   [temp7]
+      ADD    [temp8]         i         1
+      ASS          i   [temp8]
+      BLT  [LABEL_9]         i        10
+      ASS          i         0
+[LABEL_10]:
+      SEL    [temp9]     iarr2         i
+      PRF    [temp9]
+      ADD   [temp10]         i         1
+      ASS          i  [temp10]
+      BLT [LABEL_10]         i        10
+      PRF                   \n
+      RET 
+testscanf:
+     SAVE 
+      PRF test scanf statement!
+      PRF                   \n
+      PRF test scanf char,input 3 char:
+      PRF                   \n
+      SCF        ch1
+      SCF        ch2
+      SCF        ch3
+      PRF                   \n
+      PRF        ch1
+      PRF        ch2
+      PRF        ch3
+      PRF                   \n
+      PRF test scanf int,input 3 int:
+      PRF                   \n
+      SCF         i1
+      SCF         i2
+      SCF         i3
+      PRF         i1
+      PRF         i2
+      PRF         i3
+      PRF                   \n
+      RET 
+ testexpr:
+     SAVE 
+      ASS         i1         1
+      ASS         i2         2
+      ASS         i3         3
+      ASS         c1      ASS         c2      ASS         c3      PRF     test expression!
+      PRF                   \n
+      NEG   [temp11]        i1
+      SEL   [temp12]     iarr1         1
+      MUL   [temp13]        i2  [temp12]
+      ADD   [temp14]  [temp11]  [temp13]
+      SEL   [temp15]     iarr1         2
+      DIV   [temp16]        i3  [temp15]
+      SUB   [temp17]  [temp14]  [temp16]
+      PRF   [temp17]
+      PRF                   \n
+      SEL   [temp18]     iarr1         1
+      DIV   [temp19]        i2  [temp18]
+      SUB   [temp20]        i3  [temp19]
+      MUL   [temp21]        i1  [temp20]
+      ADD   [temp22]        i2  [temp21]
+      PRF   [temp22]
+      PRF                   \n
+      PRF         c3
+      PRF                   \n
+     PUSH         i2    testif
+      CAL     testif  [temp23]
+      PRF   [temp23]
+      PRF                   \n
+      RET 
+  testfac:
+     SAVE 
+      BNE [LABEL_14]         n         1
+      RET          1
+      JMP [LABEL_15]
+[LABEL_14]:
+      BNE [LABEL_16]         n         2
+      RET          1
+      JMP [LABEL_17]
+[LABEL_16]:
+      BLT [LABEL_18]         n         3
+      SUB   [temp24]         n         1
+     PUSH   [temp24]   testfac
+      CAL    testfac  [temp25]
+      SUB   [temp26]         n         2
+     PUSH   [temp26]   testfac
+      CAL    testfac  [temp27]
+      ADD   [temp28]  [temp25]  [temp27]
+      RET   [temp28]
+[LABEL_18]:
+[LABEL_17]:
+[LABEL_15]:
+    _main:
+      SCF         n1
+     PUSH         n1    testif
+      CAL     testif          
+      CAL   testloop          
+      CAL  testscanf          
+      CAL   testexpr          
+      PRF test fac num,input n:
+      SCF         n2
+      PRF the result of fac(n)=
+     PUSH         n2   testfac
+      CAL    testfac  [temp29]
+      PRF   [temp29]

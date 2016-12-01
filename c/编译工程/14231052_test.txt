@@ -1,0 +1,120 @@
+const int ci1=10,ci2=5;
+const char cc1='a',cc2='b';
+int i1,i2,iarr1[10],iarr2[10];
+char c1,c2,carr1[10],carr2[10];
+void testif(int a)
+{
+   const int a1=10;
+   printf("test if statement!");
+   printf("\n");
+   if(a1>a)
+   {
+      printf(a1-a);
+	  printf("\n");
+   }
+   else
+   {
+      printf(a-a1);
+	  printf("\n");
+   }
+   return ;
+}
+void testloop()
+{
+    int i;
+    printf("test loop statement!");
+    printf("\n");
+	printf("test forloop statement!");
+    printf("\n");
+	for(i=0;i<ci1;i=i+1)
+	{
+	   iarr1[i]=i+1;
+	}
+	for(i=0;i<ci1;i=i+1)
+	{
+	   printf(iarr1[i]);
+	}
+	printf("test doloop statement!");
+    printf("\n");
+	i=0;
+	do
+	{
+	   iarr2[i]=i+1;
+	   i=i+1;
+	}while(i<ci1)
+	i=0;
+	do
+	{
+	    printf(iarr2[i]);
+		i=i+1;
+	}while(i<ci1)
+    printf("\n");
+    return ;
+}
+void testscanf()
+{
+   int i;
+   char ch1,ch2,ch3;
+   int i1,i2,i3;
+   printf("test scanf statement!");
+   printf("\n");
+   printf("test scanf char,input 3 char:");
+   printf("\n");
+   scanf(ch1,ch2,ch3);
+   printf("\n");
+   printf(ch1);
+   printf(ch2);
+   printf(ch3);
+   printf("\n");
+   printf("test scanf int,input 3 int:");
+   printf("\n");
+   scanf(i1,i2,i3);
+   printf(i1);
+   printf(i2);
+   printf(i3);
+   printf("\n");
+   return ;
+}
+void testexpr()
+{
+   int i1,i2,i3;
+   char c1,c2,c3;
+   i1=1;
+   i2=2;
+   i3=3;
+   c1='a';
+   c2='b';
+   c3='c';
+   printf("test expression!");
+   printf("\n");
+   printf(-i1+i2*iarr1[1]-i3/iarr1[2]);
+   printf("\n");
+   printf(+i2+i1*(i3-i2/iarr1[1]));
+   printf("\n");
+   printf(c3);
+   printf("\n");
+   printf(testif(i2));
+   printf("\n");
+   return ;
+}
+int testfac(int n)
+{
+   if(n==1)
+      return (1);
+   else if(n==2)
+      return (1);
+   else if (n>=3)
+      return (testfac(n-1)+testfac(n-2));
+}
+void main()
+{
+    int n1,n2;
+	scanf(n1);
+    testif(n1);
+	testloop();
+	testscanf();
+	testexpr();
+	printf("test fac num,input n:");
+	scanf(n2);
+	printf("the result of fac(n)=",testfac(n2));
+}

@@ -1,0 +1,81 @@
+   linenum      name      type      kind     value      size   tableNo      addr
+       192
+         0
+         1       ci1      int     const         10         1         0         0
+         2       ci2      int     const          5         1         0         4
+         3       cc1     char     const         97         1         0         8
+         4       cc2     char     const         98         1         0        12
+         5        i1      int       var          0         1         0        16
+         6        i2      int       var          0         1         0        20
+         7     iarr1      int     array          0        10         0        24
+         8     iarr2      int     array          0        10         0        64
+         9        c1     char       var          0         1         0       104
+        10        c2     char       var          0         1         0       108
+        11     carr1     char     array          0        10         0       112
+        12     carr2     char     array          0        10         0       152
+        13    testif     void      func          0         0         1         1
+        16
+         1
+        14         a      int   for par          0         1         1         0
+        15        a1      int     const         10         1         1         4
+        16   [temp1]      int      Temp          0         1         1         8
+        17   [temp2]      int      Temp          0         1         1        12
+        18  testloop     void      func          0         0         2         4
+        36
+         0
+        19         i      int       var          0         1         2         0
+        20   [temp3]      int      Temp          0         1         2         4
+        21   [temp4]      int      Temp          0         1         2         8
+        22   [temp5]      int      Temp          0         1         2        12
+        23   [temp6]      int      Temp          0         1         2        16
+        24   [temp7]      int      Temp          0         1         2        20
+        25   [temp8]      int      Temp          0         1         2        24
+        26   [temp9]      int      Temp          0         1         2        28
+        27  [temp10]      int      Temp          0         1         2        32
+        28 testscanf     void      func          0         0         3        11
+        28
+         0
+        29         i      int       var          0         1         3         0
+        30       ch1     char       var          0         1         3         4
+        31       ch2     char       var          0         1         3         8
+        32       ch3     char       var          0         1         3        12
+        33        i1      int       var          0         1         3        16
+        34        i2      int       var          0         1         3        20
+        35        i3      int       var          0         1         3        24
+        36  testexpr     void      func          0         0         4        12
+        76
+         0
+        37        i1      int       var          0         1         4         0
+        38        i2      int       var          0         1         4         4
+        39        i3      int       var          0         1         4         8
+        40        c1     char       var          0         1         4        12
+        41        c2     char       var          0         1         4        16
+        42        c3     char       var          0         1         4        20
+        43  [temp11]      int      Temp          0         1         4        24
+        44  [temp12]      int      Temp          0         1         4        28
+        45  [temp13]      int      Temp          0         1         4        32
+        46  [temp14]      int      Temp          0         1         4        36
+        47  [temp15]      int      Temp          0         1         4        40
+        48  [temp16]      int      Temp          0         1         4        44
+        49  [temp17]      int      Temp          0         1         4        48
+        50  [temp18]      int      Temp          0         1         4        52
+        51  [temp19]      int      Temp          0         1         4        56
+        52  [temp20]      int      Temp          0         1         4        60
+        53  [temp21]      int      Temp          0         1         4        64
+        54  [temp22]      int      Temp          0         1         4        68
+        55  [temp23]     void      Temp          0         1         4        72
+        56   testfac      int      func          0         0         5        13
+        24
+         1
+        57         n      int   for par          0         1         5         0
+        58  [temp24]      int      Temp          0         1         5         4
+        59  [temp25]      int      Temp          0         1         5         8
+        60  [temp26]      int      Temp          0         1         5        12
+        61  [temp27]      int      Temp          0         1         5        16
+        62  [temp28]      int      Temp          0         1         5        20
+        63     _main     void      func          0         0         6        19
+        12
+         0
+        64        n1      int       var          0         1         6         0
+        65        n2      int       var          0         1         6         4
+        66  [temp29]      int      Temp          0         1         6         8

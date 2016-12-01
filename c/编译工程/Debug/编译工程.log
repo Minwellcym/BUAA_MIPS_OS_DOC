@@ -1,0 +1,17 @@
+﻿生成启动时间为 2016/12/2 3:51:56。
+     1>项目“E:\新建文件夹\c\编译工程\编译工程.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“Debug\编译工程.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         所有输出均为最新。
+       Link:
+         所有输出均为最新。
+         编译工程.vcxproj -> E:\新建文件夹\c\Debug\编译工程.exe
+       FinalizeBuildStatus:
+         正在删除文件“Debug\编译工程.unsuccessfulbuild”。
+         正在对“Debug\编译工程.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“E:\新建文件夹\c\编译工程\编译工程.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:00.08
